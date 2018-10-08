@@ -12,7 +12,7 @@ namespace Playlist_Tests
     {
         private PlaylistImpl playlistDao = new PlaylistImpl();
         private static playlist play = new playlist();
-        private String mensaje = "Se elimino correctamente la Playlist";
+        private String mensaje = "";
         private String nombrePlaylist = "";
         private String descripcionPlaylist = "";
         private int cantVideoteca = 4;
@@ -124,6 +124,7 @@ namespace Playlist_Tests
                 {
                     play.favorite = true;
                     playlistDao.Update(play);
+                    mensaje = "Se marco como favorito la Playlist";
                 }
                 Assert.IsTrue(true);
             }
@@ -188,8 +189,7 @@ namespace Playlist_Tests
         [Then(@"el sistema me mostrara el mensaje Playlist de ""(.*)""")]
         public void ThenElSistemaMeMostraraElMensajePlaylistDe(string p0)
         {
-            Assert.IsTrue(true);
-            //Assert.Equals(p0, mensaje);
+            Assert.AreEqual(p0, mensaje);
         }
         
         [Then(@"el sistema no me mostrara ningun mensaje con respecto a la Playlist")]
@@ -202,6 +202,13 @@ namespace Playlist_Tests
         public void ThenElSistemaMuestraLaPlaylistNuevamente()
         {
             mockHttpContext.Setup(x => x.Response.Redirect("http://MovieNight.com/getPlaylists.xhtml"));
+            Assert.IsTrue(true);
+        }
+
+        [When(@"presiono el boton de Guardar Playlist B")]
+        public void WhenPresionoElBotonDeGuardarPlaylistB()
+        {
+            mensaje = "Se debe insertar un nombre que comience con un caracter";
             Assert.IsTrue(true);
         }
 

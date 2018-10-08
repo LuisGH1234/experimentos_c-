@@ -88,7 +88,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 11
  testRunner.And("coloco el indice del item Playlist que quiero mover como 2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 12
- testRunner.Then("el sistema actualiza la lista con el orden especificado exitosamente", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+  testRunner.Then("el sistema actualiza la lista con el orden especificado exitosamente", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -112,7 +112,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 20
  testRunner.And("coloco el indice del item Playlist que quiero mover como menos 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 21
- testRunner.Then("el sistema no actualiza la lista con el orden especificado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+  testRunner.Then("el sistema no actualiza la lista con el orden especificado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -136,7 +136,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 29
  testRunner.And("coloco el indice del item Playlist que quiero mover como 4", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 30
- testRunner.Then("el sistema no actualiza la lista con el orden especificado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+  testRunner.Then("el sistema no actualiza la lista con el orden especificado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -154,7 +154,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 35
  testRunner.When("hago click en el enlace de Gestionar Videoteca", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 36
- testRunner.And("busco el producto \"Playlist 1234\" para seleccionarla de la tabla de Playlist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("busco el producto \"name 1\" para seleccionarla de la tabla de Playlist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 37
  testRunner.And("hago click en el boton de Eliminar Playlist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 38
@@ -283,7 +283,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("en la nueva pantalla escribo en el campo Descripcion Producto el valor de \"mi des" +
                     "cripcion 1234\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 85
- testRunner.And("presiono el boton de Guardar Playlist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("presiono el boton de Guardar Playlist B", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 86
  testRunner.Then("el sistema me mostrara el mensaje Playlist de \"Se debe insertar un nombre que com" +
                     "ience con un caracter\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
