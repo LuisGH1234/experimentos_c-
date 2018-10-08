@@ -8,30 +8,39 @@ namespace crud_test_c
 {
     public class PlaylistImpl : IPlaylist
     {
-        playlistdbEntities context = new playlistdbEntities();
+        readonly Entities _context;
+
+        public PlaylistImpl() => _context = new Entities();
 
         public void Delete(long id)
         {
-            var play = context.playlists.Find(id);
-            context.playlists.Remove(play);
-            context.SaveChanges();
+            try
+            {
+                var play = _context.playlists.Find(id);
+                _context.playlists.Remove(play);
+                _context.SaveChanges();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
-        public playlist GetPlaylist(long id) => context.playlists.Find(id);
+        public playlist GetPlaylist(long id) => _context.playlists.Find(id);
 
-        public List<playlist> GetPlaylists() => context.playlists.ToList();
+        public List<playlist> GetPlaylists() => _context.playlists.ToList();
 
         public void Insert(playlist play)
         {
-            context.playlists.Add(play);
-            context.SaveChanges();
+            _context.playlists.Add(play);
+            _context.SaveChanges();
         }
 
         public void Update(playlist play)
         {
-            var obj = context.playlists.Find(play.id);
+            var obj = _context.playlists.Find(play.id);
             obj.Sets(play);
-            context.SaveChanges();
+            _context.SaveChanges();
         }
     }
 }

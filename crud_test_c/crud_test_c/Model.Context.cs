@@ -13,9 +13,9 @@ namespace crud_test_c
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class playlistdbEntities : DbContext
+    public partial class Entities : DbContext
     {
-        public playlistdbEntities()
+        public Entities()
             : base("name=playlistdbEntities")
         {
         }
