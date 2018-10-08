@@ -14,16 +14,9 @@ namespace crud_test_c
 
         public void Delete(long id)
         {
-            try
-            {
-                var play = _context.playlists.Find(id);
-                _context.playlists.Remove(play);
-                _context.SaveChanges();
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            var play = _context.playlists.Find(id);
+            _context.playlists.Remove(play);
+            _context.SaveChanges();
         }
 
         public playlist GetPlaylist(long id) => _context.playlists.Find(id);
@@ -38,6 +31,7 @@ namespace crud_test_c
 
         public void Update(playlist play)
         {
+
             var obj = _context.playlists.Find(play.id);
             obj.Sets(play);
             _context.SaveChanges();
