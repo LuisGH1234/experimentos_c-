@@ -43,9 +43,6 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="Moq, Version=4.10.0.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
-      <HintPath>..\packages\Moq.4.10.0\lib\net45\Moq.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -73,9 +70,14 @@
     <Reference Include="TechTalk.SpecFlow, Version=2.4.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
       <HintPath>..\packages\SpecFlow.2.4.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
     </Reference>
+    <Reference Include="Telerik.JustMock, Version=2018.3.912.1, Culture=neutral, PublicKeyToken=721b6c5bc0326b3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\JustMock.2018.3.912.1\lib\Net35\Telerik.JustMock.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="DAO\IDao.cs" />
+    <Compile Include="DAO\PlaylistDAO.cs" />
     <Compile Include="playlist.cs">
       <DependentUpon>PlaylistModel.tt</DependentUpon>
     </Compile>
@@ -95,6 +97,7 @@
       <DependentUpon>PlaylistModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test\TestUnitTest\PlaylistTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
@@ -121,6 +124,11 @@
       <DependentUpon>PlaylistModel.edmx</DependentUpon>
       <LastGenOutput>PlaylistModel.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Test\TestIntegrationSuit\" />
+    <Folder Include="Test\TestIntegrationTest\" />
+    <Folder Include="Test\TestUnitSuite\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

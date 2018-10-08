@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaylistCore", "PlaylistCore\PlaylistCore.csproj", "{265BDED9-C619-4857-A89F-6B1E45E84C47}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaylistTests", "PlaylistTests\PlaylistTests.csproj", "{59DDD230-C40E-41AC-8BE7-A517EFCDBA7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{265BDED9-C619-4857-A89F-6B1E45E84C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{265BDED9-C619-4857-A89F-6B1E45E84C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{265BDED9-C619-4857-A89F-6B1E45E84C47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59DDD230-C40E-41AC-8BE7-A517EFCDBA7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59DDD230-C40E-41AC-8BE7-A517EFCDBA7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59DDD230-C40E-41AC-8BE7-A517EFCDBA7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59DDD230-C40E-41AC-8BE7-A517EFCDBA7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
