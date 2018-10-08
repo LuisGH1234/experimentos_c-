@@ -1,16 +1,15 @@
 ﻿using crud_test_c;
-using System;
-using TechTalk.SpecFlow;
-using System.Web;
 using Moq;
 using NUnit.Framework;
+using System;
+using System.Web;
+using TechTalk.SpecFlow;
 
 namespace Playlist_Tests
 {
     [Binding]
-    public class PlaylistSteps
+    public class GestionarVideotecaSteps
     {
-
         private PlaylistImpl playlistDao = new PlaylistImpl();
         private static playlist play = new playlist();
         private String mensaje = "";
@@ -21,7 +20,7 @@ namespace Playlist_Tests
         private int indicePlaylist = 0;
 
         private Mock<HttpContextBase> mockHttpContext = new Mock<HttpContextBase>();
-        private Mock<HttpResponseBase> response;
+        //private Mock<HttpResponseBase> response;
 
         [Given(@"despues de iniciar sesion en la aplicacion")]
         public void GivenDespuesDeIniciarSesionEnLaAplicacion()
@@ -79,8 +78,9 @@ namespace Playlist_Tests
         {
             try
             {
+                play = playlistDao.GetPlaylists()[0];
                 playlistDao.Delete(play.id);
-                mensaje = "Se elimino correctamente";
+                mensaje = "Se elimino correctamente la Playlist";
                 Assert.IsTrue(true);
             }
             catch (Exception e)
