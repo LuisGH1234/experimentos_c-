@@ -185,8 +185,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 47
  testRunner.And("hago click en el boton Cancelar Eliminacion", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 48
- testRunner.Then("el sistema me mostrara el mensaje Playlist de \"Se elimino correctamente la Playli" +
-                    "st\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("el sistema muestra la playlist nuevamente", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

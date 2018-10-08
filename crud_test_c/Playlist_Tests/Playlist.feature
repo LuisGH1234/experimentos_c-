@@ -45,7 +45,7 @@ Scenario: Eliminar Playlist B
 	And busco el producto "Playlist 1234" para seleccionarla de la tabla de Playlist
 	And hago click en el boton de Eliminar Playlist
 	And hago click en el boton Cancelar Eliminacion
-	Then el sistema me mostrara el mensaje Playlist de "Se elimino correctamente la Playlist"
+	Then el sistema muestra la playlist nuevamente
 	
 #Marcar como favorito
 #criterio 1
