@@ -1,0 +1,10 @@
+]
+[E:\lagh3\Documents\2018-2\Experimentos\experimentos_c-\crud_test_c\crud_test_c\IPlaylist.csc
+_E:\lagh3\Documents\2018-2\Experimentos\experimentos_c-\crud_test_c\crud_test_c\Model.Context.cs[
+WE:\lagh3\Documents\2018-2\Experimentos\experimentos_c-\crud_test_c\crud_test_c\Model.csd
+`E:\lagh3\Documents\2018-2\Experimentos\experimentos_c-\crud_test_c\crud_test_c\Model.Designer.cs^
+ZE:\lagh3\Documents\2018-2\Experimentos\experimentos_c-\crud_test_c\crud_test_c\playlist.cs`
+^E:\lagh3\Documents\2018-2\Experimentos\experimentos_c-\crud_test_c\crud_test_c\PlaylistImpl.csk
+iE:\lagh3\Documents\2018-2\Experimentos\experimentos_c-\crud_test_c\crud_test_c\Properties\AssemblyInfo.cs`
+\E:\lagh3\Documents\2018-2\Experimentos\experimentos_c-\crud_test_c\crud_test_c\sysdiagram.csX
+TC:\Users\lagh3\AppData\Local\Temp\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs
